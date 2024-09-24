@@ -9,6 +9,7 @@ require('plugins')
 
 -- LSP Configuration
 require("mason").setup()
+vim.api.nvim_set_hl(0, "MasonNormal", { bg = "#000000" })
 require("mason-lspconfig").setup()
 
 require("mason-lspconfig").setup_handlers {
